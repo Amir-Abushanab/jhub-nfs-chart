@@ -6,6 +6,6 @@ entries:
       name: jhub
       icon: https://jupyter.org/assets/hublogo.svg
       sources:
-      - https://github.com/amir-abushanab/jhub-nfs-chart-test
+      - https://github.com/amir-abushanab/jhub-nfs-chart-test/jupyter
       urls:
-      - https://amir-abushanab.github.io/jhub-nfs-chart-test/chart.tgz
+      - https://amir-abushanab.github.io/jhub-nfs-chart-test/jupyter.tgz
