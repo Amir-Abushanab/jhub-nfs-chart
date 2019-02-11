@@ -159,7 +159,8 @@ singleuser:
   events: true
   extraAnnotations: {}
   extraLabels: {}
-  extraEnv: {}
+  extraEnv:
+      CHOWN_HOME: 'yes'
   lifecycleHooks:
   initContainers:
   nodeSelector: {}
@@ -172,8 +173,8 @@ singleuser:
     extraVolumes: []
     extraVolumeMounts: []
     static:
-      pvcName: 
-      subPath: '{username}'
+      pvcName: "nfs-pvc"
+      subPath: 'home/{username}'
     capacity: 10Gi
     homeMountPath: /home/jovyan
     dynamic:
@@ -201,7 +202,7 @@ singleuser:
   extraResource:
     limits: {}
     guarantees: {}
-  cmd: jupyterhub-singleuser
+  cmd: "start-singleuser.sh"
   defaultUrl:
 
 
