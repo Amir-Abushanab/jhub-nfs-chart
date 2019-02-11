@@ -1,1 +1,0 @@
-# jhub-nfs-chart-test
