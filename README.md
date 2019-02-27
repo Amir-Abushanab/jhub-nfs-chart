@@ -1,5 +1,9 @@
-# jhub-nfs-chart
+### NFS JupyterHub Helm Chart
 
-This is the chart for an NFS based Jupyterhub deployment. It's forked from the original Jupyterhub helm chart (v0.7.0) https://github.com/jupyterhub/helm-chart and everything applicable to it is applicable to this  
+This repo was created to mitigate a very peculiar bug involving Rancher and kubeSpawner interpreting ints as strings. Consider it a default deployment for an NFS storage backed Jupyterhub, based on (v0.7.0) https://github.com/jupyterhub/helm-chart
 
-The gh-pages branch contains the actual chart, and is setup this way so that it can be pulled directly as a catalog into Rancher
+The chart is on the gh-pages branch to allow Rancher to pull it as a catalog app
+
+The default values are set similar to those described here https://zero-to-jupyterhub.readthedocs.io/en/stable/amazon/efs_storage.html
+
+The only other modification is that the network is set to `ClusterIP` - i.e you should add a separate ingress controller and make sure to generate and set a value for `proxy.secretToken`
