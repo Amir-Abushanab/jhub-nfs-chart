@@ -7,6 +7,6 @@ entries:
     description: Modified v0.7.0 of Jhub for use with a centralized NFS
     name: jupyterhub
     urls:
-    - https://amir-abushanab.github.io/jhub-nfs-chart/jupyterhub-0.7.0.tgz
+    - https://precinomics.github.io/jhub-nfs-chart/jupyterhub-0.7.0.tgz
     version: 0.1.0
 generated: 2019-02-07T13:47:15.908214089-05:00
