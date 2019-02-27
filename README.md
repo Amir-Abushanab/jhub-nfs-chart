@@ -4,4 +4,4 @@ This repo was created to mitigate a very peculiar bug involving Rancher and kube
 
 The default values are set similar to those described here https://zero-to-jupyterhub.readthedocs.io/en/stable/amazon/efs_storage.html
 
-The only other modification is that the network is set to `ClusterIP` - i.e you should add a separate ingress and make sure to generate and set a value for `proxy.secretToken`
+The only other modification is that the network is set to `ClusterIP` - i.e you should add a separate ingress controller and make sure to generate and set a value for `proxy.secretToken`
